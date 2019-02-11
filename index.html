@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="screen" />
+
+    <title>To Do List</title>
+</head>
+<body>
+    
+<div class="container">
+    <h1 class="bg-success text-light p-3 my-3 rounded">TodoList</h1>
+    <div class="border-top border-success p-3 my-3 rounded bg-light">
+
+        <!-- Formulaire Ajout de tâche -->
+        <form id="form" action="">
+            <label for="task">Ajouter une tâche :</label><br>
+            <input type="text" name="task"> <button class="btn-primary rounded">Ajouter</button>
+        </form>
+        <hr class="my-3">
+
+        <!-- Boutons de tri -->
+        <div id="classer" class="text-right mb-4 none">
+            <button id="task-todo" class="btn-primary rounded">A faire</button>
+            <button id="task-done" class="btn-primary rounded">Terminé</button>
+            <button id="task-all" class="btn-primary rounded">Tous</button>
+        </div>
+
+        <!-- Liste des tâches -->
+        <ul id="tasklist" class="list-unstyled">
+            <div id="lastelem"></div>
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+    <script src="./public/js/index.js"></script>
+</body>
+</html>
